@@ -2,15 +2,38 @@
 @use '../abstracts/variables' as var;
 @use '../base/typography' as type;
 
-body {
-  font-family: type.$font;
-  background-color: rgb(255, 123, 0);
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+h1,
+h3 {
+  text-align: center;
 }
 
-h1 {
-  color: var.$primary-color;
+h2 {
+  text-align: left;
+}
+
+img {
+  max-width: 2000px;
   text-align: center;
+  padding: 1rem;
+  border: 3px solid #000080;
+}
+
+body {
+  background-color: #1faee6;
+  border: 6px solid #000080;
+}
+
+main {
+  color: #000080;
+  font-size: 2rem;
+}
+
+article {
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+  color: #000080;
+  text-align: center;
+  font-size: 1rem;
 }
